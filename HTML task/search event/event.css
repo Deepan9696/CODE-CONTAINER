@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(230, 234, 238);
+}
+.b{
+    color: rgb(10, 6, 1);
+    text-align: center;
+    border: solid black 3px;
+    border-radius: 15px;
+    
+}
+.c{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+}
+.part2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.e1{
+  
+    border: solid black 5px;
+    border-radius: 10px;
+    border-spacing: 5px;
+}
+.f{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.e h3{
+    text-align: center; 
+}
+.h button{
+    background-color: rgb(31, 196, 31);
+    border-radius: 15px;
+}
