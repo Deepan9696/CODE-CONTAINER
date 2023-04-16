@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Countdown</title>
+</head>
+<style>
+    body{
+        background-image: url("https://png.pngtree.com/background/20210716/original/pngtree-colorful-birthday-celebration-background-picture-image_1355450.jpg");
+    }
+    h1{
+        color: #faf5f5;
+        text-align: center;
+        padding-top: 200px;
+        font-size: 80px;
+    }
+</style>
+<body>
+	<h1 id="countdown">10</h1>
+	<script>
+		function countdown(callback) {
+			let counter = 10;
+			const intervalId = setInterval(() => {
+				counter--;
+				document.getElementById("countdown").innerText = counter;
+				if (counter === 0) {
+					clearInterval(intervalId);
+					callback();
+				}
+			}, 1000);
+		}
+
+		function displayMessage() {
+			document.getElementById("countdown").innerText = "HAPPY INDEPENDENCE DAY";
+		}
+
+		countdown(displayMessage);
+	</script>
+</body>
+</html>
